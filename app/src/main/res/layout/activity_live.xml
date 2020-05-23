@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#6666ff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/live"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="Sensors"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="#6666ff"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:padding="30dp">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            >
+
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Accelerometer"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/AccX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="X: "
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/AccY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Y: "
+                android:textSize="15sp" />
+
+
+            <TextView
+
+                android:id="@+id/AccZ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Z: "
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="30dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:layout_marginBottom="192dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gyroscope"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/GyroX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="X: "
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/GyroY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Y: "
+                android:textSize="15sp" />
+
+
+            <TextView
+
+                android:id="@+id/GyroZ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Z: "
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:padding="30dp">
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Light Sensor"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="illumunance"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:text="Cancel"
+        android:background="#6666ff"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
